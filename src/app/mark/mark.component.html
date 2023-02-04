@@ -1,0 +1,16 @@
+<button class="btn" (click)="back()">retour</button>
+
+<form action="" [formGroup]="markForm">
+  <div>
+    <div class="field">
+      <label for="matiere">Matiere</label>
+      <input value="{{course?.name}}" type="text" name="matiere" class="UT-input">
+    </div>
+    <div class="field">
+      <label for="note">note</label>
+      <input formControlName="score" type="text" name="note" class="UT-input">
+    </div>
+    <button class="btn" (click)="edit()">enregistrer</button>
+
+  </div>
+</form>

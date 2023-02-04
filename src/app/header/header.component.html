@@ -1,0 +1,11 @@
+
+<div class="dropdown">
+  <button class="dropbtn">semestres</button>
+  <div class="dropdown-content">
+    <!--
+    <a *ngFor="let s of semesters" routerLink="/marks/{{s.id}}">{{s.name}}</a>
+    -->
+
+    <a *ngFor="let s of semesters" routerLink="/semester/{{s.id}}">{{s.name}}</a>
+  </div>
+</div>

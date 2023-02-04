@@ -1,10 +1,21 @@
+import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { SemesterComponent } from './semester/semester.component';
+import { MarkComponent } from './mark/mark.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    component: HeaderComponent,
+  },
+  {
+    path: 'semester/:id',
+    component: SemesterComponent,
+  },
+  {
+    path: 'mark/:id',
+    component: MarkComponent,
   },
   {
     path: '',

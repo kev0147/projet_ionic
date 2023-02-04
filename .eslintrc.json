@@ -6,6 +6,7 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": ["tsconfig.json"],
+        "tsconfigRootDir": "C:/Users/kev/Desktop/projet_ionic/gestionNote",
         "createDefaultProgram": true
       },
       "extends": [
